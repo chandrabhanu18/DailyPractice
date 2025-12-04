@@ -28,6 +28,7 @@ const myfunction= async()=>{
     const userSubjects = await getSubjects(userDetails.userroll);
     const userMarks = await getMarks(userSubjects.subid);
     console.log("User Marks:", userMarks.marks);
+    console.log("Finished fetching user data.");
 };
 
 myfunction();   
